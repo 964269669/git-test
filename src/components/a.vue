@@ -10,7 +10,7 @@
       id="footer"
       style="position: absolute;bottom:0;width:100%;"
     >
-    
+
       <input
         class="ipt"
         type="text"
@@ -24,23 +24,23 @@
   </div>
 </template>
 <script>
-import $ from "jquery";
+import $ from 'jquery'
 
 export default {
-  name: "HelloWorld",
+  name: 'HelloWorld',
   components: {},
   data() {
     return {
       footerHeight: '',
       winHeight: ''
-    };
+    }
   },
   created() {},
   mounted() {
-    var ff = document.getElementById('footer')
+    const ff = document.getElementById('footer')
     this.$nextTick(() => {
-      this.winHeight = $(window).height();
-      this.footerHeight = ff.scrollHeight;
+      this.winHeight = $(window).height()
+      this.footerHeight = ff.scrollHeight
       console.log(this.footerHeight)
     })
     const h = document.body.scrollHeight
@@ -51,7 +51,7 @@ export default {
         this.onBlur()// 失焦
       }
     })
-    
+
     // $(window).resize(function() {
     //   console.log('resize1')
     //     var thisHeight = $(this).height();
@@ -60,24 +60,24 @@ export default {
     // });
   },
   methods: {
-      onBlur () {
-        console.log('失焦')
-        var ele = $('#footer').css({
-          position: 'fixed',
-          marginTop: 0
-        })
-      },
+    onBlur () {
+      console.log('失焦')
+      const ele = $('#footer').css({
+        position: 'fixed',
+        marginTop: 0
+      })
+    },
 
     handleFocus(e) {
       console.log('得焦')
-      var that = this
-      var ele = $('#footer').css({
+      const that = this
+      $('#footer').css({
         position: 'static',
         marginTop: that.winHeight - this.footerHeight + 'px'
       })
     }
   }
-};
+}
 </script>
 <!-- Add "scoped" attribute to limit CSS to this component only -->
 <style>
