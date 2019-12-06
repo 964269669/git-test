@@ -2,6 +2,7 @@
   <div class="hello">
     hello word页面
     master 1
+    master 2
   </div>
 </template>
 
