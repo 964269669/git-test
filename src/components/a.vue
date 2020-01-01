@@ -6,6 +6,7 @@
     >
       没错我就是内容区域，可多可多了
       dev1
+      dev2
     </section>
     <footer
       id="footer"
