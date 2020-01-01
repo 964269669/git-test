@@ -2,6 +2,7 @@
   <div id="app">
     我是App.vue
     m1
+    m2
     <router-view/>
   </div>
 </template>
