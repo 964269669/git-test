@@ -1,4 +1,4 @@
-# project 开发分支
+# project 生产分支
 
 > A Vue.js project
 
